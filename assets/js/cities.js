@@ -199,7 +199,11 @@ for (const city of cities) {
     Plaka Kodu Tek Sayi Olan
     Sehirleri Yazdiriyoruz */
   if (city.plateNumber % 2 === 1) {
-    citiesWithOddNumberedLicensePlates.innerHTML += `<li>${city.city} - ${city.plateNumber}</li>`
+    citiesWithOddNumberedLicensePlates.innerHTML += `
+    <tr>
+      <td>${city.city}</td>
+      <td>${city.plateNumber}</td>
+    </tr>`
   } else {
     citiesWithEvenNumberedLicensePlates.innerHTML += `<li>${city.city} - ${city.plateNumber}</li>`
   }
