@@ -168,3 +168,10 @@ let cities = [
 for (const city of cities) {
   citiesListFamousForPlateNumber.innerHTML += `<li>${city.city} - ${city.famousFor} - ${city.plateNumber}</li>`
 }
+
+/* Array Icindeki Tum Sehirler Icinde
+  Yemekleri Ile Unlu Olan
+  Sehirleri Yazdiriyoruz */
+for (const city of cities) {
+  citiesFamousForTheirFood.innerHTML += `<li>${city.city} - ${city.famousFor}</li>`
+}
