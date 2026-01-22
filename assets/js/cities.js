@@ -167,22 +167,29 @@ let cities = [
   Plaka Kodu Bilgilerini Yazdiriyoruz */
 for (const city of cities) {
   citiesListFamousForPlateNumber.innerHTML += `<li>${city.city} - ${city.famousFor} - ${city.plateNumber}</li>`
-}
 
-/* Array Icindeki Tum Sehirler Icinde
-  Yemekleri Ile Unlu Olan
-  Sehirleri Yazdiriyoruz */
-for (let i = 0; i < cities.length; i++) {
-  if (cities[i].type === "food") {
-    citiesFamousForTheirFood.innerHTML += `<li>${cities[i].city} - ${cities[i].famousFor}</li>`
+  /* Array Icindeki Tum Sehirler Icinde
+    Yemekleri Ile Unlu Olan
+    Sehirleri Yazdiriyoruz */
+  if (city.type === "food") {
+    citiesFamousForTheirFood.innerHTML += `<li>${city.city} - ${city.famousFor}</li>`
+  }
+
+  /* Array Icindeki Tum Sehirler Icinde
+    Tarihi Yerleri Ile Unlu Olan
+    Sehirleri Yazdiriyoruz */
+  if (city.type === "place") {
+    citiesFamousForTheirHistoricPlaces.innerHTML += `<li>${city.city} - ${city.famousFor}</li>`
+  }
+
+  /* Array Icindeki Tum Sehirler Icinde
+    Plaka Kodu Tek Sayi Olan
+    Sehirleri Yazdiriyoruz */
+  if (city.plateNumber % 2 === 1) {
+    citiesWithOddNumberedLicensePlates.innerHTML += `<li>${city.city} - ${city.plateNumber}</li>`
+  } else {
+    citiesWithEvenNumberedLicensePlates.innerHTML += `<li>${city.city} - ${city.plateNumber}</li>`
   }
 }
 
-/* Array Icindeki Tum Sehirler Icinde
-  Tarihi Yerleri Ile Unlu Olan
-  Sehirleri Yazdiriyoruz */
-for (let i = 0; i < cities.length; i++) {
-  if (cities[i].type === "place") {
-    citiesFamousForTheirHistoricPlaces.innerHTML += `<li>${cities[i].city} - ${cities[i].famousFor}</li>`
-  }
-}
+
