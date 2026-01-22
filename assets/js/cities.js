@@ -166,7 +166,12 @@ let cities = [
   Ne Ile Unlu Oldugu
   Plaka Kodu Bilgilerini Yazdiriyoruz */
 for (const city of cities) {
-  citiesListFamousForPlateNumber.innerHTML += `<li>${city.city} - ${city.famousFor} - ${city.plateNumber}</li>`
+  citiesListFamousForPlateNumber.innerHTML += `
+    <tr>
+      <td>${city.city}</td>
+      <td>${city.famousFor}</td>
+      <td>${city.plateNumber}</td>
+    </tr>`
 
   /* Array Icindeki Tum Sehirler Icinde
     Yemekleri Ile Unlu Olan
