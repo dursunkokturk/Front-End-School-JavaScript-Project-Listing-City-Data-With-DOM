@@ -5,6 +5,11 @@ body {
 h2 {
   background-color: lightblue;
 }
+
+.title{
+  background-color: lightcoral;
+}
+
 table tr:nth-child(odd) {
   background-color: lightgrey;
 }
