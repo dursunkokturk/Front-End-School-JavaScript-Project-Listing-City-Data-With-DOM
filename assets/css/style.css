@@ -6,18 +6,6 @@ h2 {
   background-color: lightblue;
 }
 
-.title{
-  background-color: lightcoral;
-}
-
-table tr:nth-child(odd) {
-  background-color: lightgrey;
-}
-
-table tr:nth-child(even) {
-  background-color: lightgreen;
-}
-
 .modern-table {
   width: 50%;
   border-collapse: separate;
