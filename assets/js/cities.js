@@ -177,3 +177,12 @@ for (let i = 0; i < cities.length; i++) {
     citiesFamousForTheirFood.innerHTML += `<li>${cities[i].city} - ${cities[i].famousFor}</li>`
   }
 }
+
+/* Array Icindeki Tum Sehirler Icinde
+  Tarihi Yerleri Ile Unlu Olan
+  Sehirleri Yazdiriyoruz */
+for (let i = 0; i < cities.length; i++) {
+  if (cities[i].type === "place") {
+    citiesFamousForTheirHistoricPlaces.innerHTML += `<li>${cities[i].city} - ${cities[i].famousFor}</li>`
+  }
+}
