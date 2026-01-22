@@ -205,7 +205,11 @@ for (const city of cities) {
       <td>${city.plateNumber}</td>
     </tr>`
   } else {
-    citiesWithEvenNumberedLicensePlates.innerHTML += `<li>${city.city} - ${city.plateNumber}</li>`
+    citiesWithEvenNumberedLicensePlates.innerHTML += `
+    <tr>
+      <td>${city.city}</td>
+      <td>${city.plateNumber}</td>
+    </tr>`
   }
 }
 
