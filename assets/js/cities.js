@@ -177,7 +177,11 @@ for (const city of cities) {
     Yemekleri Ile Unlu Olan
     Sehirleri Yazdiriyoruz */
   if (city.type === "food") {
-    citiesFamousForTheirFood.innerHTML += `<li>${city.city} - ${city.famousFor}</li>`
+    citiesFamousForTheirFood.innerHTML += `
+    <tr>
+      <td>${city.city}</td>
+      <td>${city.famousFor}</td>
+    </tr>`
   }
 
   /* Array Icindeki Tum Sehirler Icinde
