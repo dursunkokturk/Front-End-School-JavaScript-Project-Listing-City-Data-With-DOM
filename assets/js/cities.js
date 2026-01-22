@@ -160,3 +160,11 @@ let cities = [
     plateNumber: "09"
   }
 ];
+
+/* Array Icindeki Tum Sehirler Icin
+  Sehir Adi
+  Ne Ile Unlu Oldugu
+  Plaka Kodu Bilgilerini Yazdiriyoruz */
+for (const city of cities) {
+  citiesListFamousForPlateNumber.innerHTML += `<li>${city.city} - ${city.famousFor} - ${city.plateNumber}</li>`
+}
