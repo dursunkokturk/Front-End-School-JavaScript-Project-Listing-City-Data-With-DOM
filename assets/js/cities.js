@@ -188,7 +188,11 @@ for (const city of cities) {
     Tarihi Yerleri Ile Unlu Olan
     Sehirleri Yazdiriyoruz */
   if (city.type === "place") {
-    citiesFamousForTheirHistoricPlaces.innerHTML += `<li>${city.city} - ${city.famousFor}</li>`
+    citiesFamousForTheirHistoricPlaces.innerHTML += `
+    <tr>
+      <td>${city.city}</td>
+      <td>${city.famousFor}</td>
+    </tr>`
   }
 
   /* Array Icindeki Tum Sehirler Icinde
